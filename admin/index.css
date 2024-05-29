@@ -1,0 +1,49 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	direction: rtl;
+}
+
+body {
+	margin: 0;
+	width: 100svw;
+	height: 100svh;
+
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+}
+
+button {
+	border-radius: 15px;
+	height: fit-content;
+	padding: 0.5rem;
+	cursor: pointer;
+
+	&:hover {
+		background-color: rgba(0, 0, 255, 0.2);
+	}
+	border: none;
+}
+
+.shadow {
+	box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.25),
+		0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+input {
+	border-radius: 15px;
+	height: fit-content;
+}
+
+.fadein {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

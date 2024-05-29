@@ -1,0 +1,103 @@
+.volunteeringContentPanel {
+	width: 70%;
+	height: 70%;
+	border: 1px solid black;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 1rem;
+}
+
+.volunteeringHeaderContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.volunteeringDetailsContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	width: 100%;
+}
+
+.detailsItem {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	gap: 0.5rem;
+
+	& label {
+		font-weight: bold;
+	}
+}
+
+.volunteeringFormContainer {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1rem;
+	width: 100%;
+
+	& textarea,
+	input,
+	select {
+		width: 50%;
+		border-radius: 30px;
+	}
+
+	& textarea {
+		height: 5rem;
+		outline: none;
+	}
+
+	& select {
+		border-radius: 30px;
+	}
+}
+.professionTag {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding: 0.8rem;
+	border-radius: 30px;
+	align-items: center;
+	justify-content: center;
+	width: 7rem;
+	height: 2.5rem;
+	label {
+		all: unset;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	p {
+		all: unset;
+		font-size: 13px;
+	}
+	&:hover {
+		background-color: rgba(0, 0, 255, 0.1);
+		cursor: pointer;
+		font-size: larger;
+		font-weight: bold;
+	}
+	text-align: center;
+}
+
+.professionTagsContainer {
+	display: flex;
+	gap: 1rem;
+}
+
+.activityPanelButtonContainer {
+	display: flex;
+	justify-content: center;
+	button {
+		width: 6rem;
+	}
+}

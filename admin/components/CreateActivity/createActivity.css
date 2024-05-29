@@ -1,0 +1,113 @@
+.volunteeringsLayoutContainer {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+#volunteeringsContent {
+	width: 100%;
+}
+
+.activityRow {
+	border-radius: 30px;
+	border: 0.5px solid rgba(0, 0, 255, 0.8);
+	padding: 1rem;
+	width: 80%;
+	text-align: center;
+	cursor: pointer;
+	&:hover {
+		background-color: rgba(0, 0, 255, 0.1);
+	}
+}
+
+.volunteeringContentPanel {
+	width: 90%;
+	height: 80%;
+	border: 1px solid black;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 1rem;
+}
+
+.volunteeringHeaderContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.volunteeringDetailsContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	width: 100%;
+}
+
+.detailsItem {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	gap: 0.5rem;
+
+	& label {
+		font-weight: bold;
+	}
+}
+
+.volunteeringFormContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+
+	& textarea,
+	input,
+	select {
+		width: 50%;
+		border-radius: 30px;
+	}
+
+	& textarea {
+		height: 5rem;
+		outline: none;
+	}
+
+	& select {
+		border-radius: 30px;
+	}
+}
+
+.volunteeringCreationPanel {
+	width: 80%;
+	height: 80%;
+	border: 1px solid black;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 1rem;
+}
+
+.professionTag {
+	padding: 0.5rem;
+	border-radius: 30px;
+	border: 1px solid black;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.selectedProfessionsContainer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 1rem;
+}
